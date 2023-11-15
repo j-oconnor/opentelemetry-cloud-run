@@ -82,8 +82,8 @@ steps:
 substitutions:
   _REGION: us-east1
   _REGISTRY: ${_REGION}-docker.pkg.dev/${PROJECT_ID}/run-otel-example
-  _IMAGE_APP: ${_REGISTRY}/sample-app$:{SHORTSHA}
-  _IMAGE_COLLECTOR: ${_REGISTRY}/collector$:{SHORTSHA}
+  _IMAGE_APP: ${_REGISTRY}/sample-app$:{SHORT_SHA}
+  _IMAGE_COLLECTOR: ${_REGISTRY}/collector$:{SHORT_SHA}
   _SA_NAME: run-otel-example-sa
 
 images:
